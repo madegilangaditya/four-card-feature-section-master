@@ -1,0 +1,99 @@
+$font: 'Poppins', sans-serif;
+$primary-color1:hsl(0, 78%, 62%);
+$primary-color2: hsl(180, 62%, 55%);
+$primary-color3: hsl(34, 97%, 64%);
+$primary-color4: hsl(212, 86%, 64%);
+$neutral-color1: hsl(234, 12%, 34%);
+$neutral-color2: hsl(229, 6%, 66%);
+$neutral-color3: hsl(0, 0%, 98%);
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-size: 15px;
+    font-family: $font;
+    color: $neutral-color2;
+    line-height: 1.5;
+    font-weight: 400;
+}
+
+p{
+    font-size: 0.9375rem;
+    line-height: 1.77;
+}
+
+h1, h2{
+    color: $neutral-color1;
+    font-size: 1.5625rem;
+}
+
+.showcase{
+    padding: 85px 32px 53px;
+    background-color: $neutral-color3;
+    min-height: 100vh;
+
+    &-card{
+        margin: auto;
+        max-width: 1110px;
+
+        .col-title{
+            text-align: center;
+            margin-bottom: 75px;
+            h1{
+                font-weight: 200;
+                margin-bottom: 20px;
+                span{
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .col-card{
+
+            &-content{
+                border-radius: 7px;
+                border-top:3px solid;
+                padding: 28px;
+                box-shadow: 0 10px 15px 0px rgba(0, 0, 0, 0.22);
+                margin-bottom: 25px;
+
+                h2{
+                    font-size: 1.25rem;
+                }
+
+                p{
+                    font-size: 0.875rem;
+                }
+
+                .img-wrap{
+                    text-align: right;
+                    margin-top: 25px;
+                    
+                    img{
+                        max-width: 58px;
+                    }
+                }
+            }
+            
+            .green{
+                border-color: $primary-color2;
+            }
+            .red{
+                border-color: $primary-color1;
+            }
+            .yellow{
+                border-color: $primary-color3;
+            }
+            .blue{
+                border-color: $primary-color4;
+            }
+        }
+    }
+}
+
+@import 'responsive';
+
